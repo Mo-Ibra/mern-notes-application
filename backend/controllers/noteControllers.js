@@ -1,7 +1,6 @@
-const express = require('express');
-
 const Note = require('../models/note');
 
+// Get All Notes API
 exports.getAllNotes = async (req, res) => {
   try {
 
@@ -19,6 +18,7 @@ exports.getAllNotes = async (req, res) => {
   }
 };
 
+// Get Note by ID API
 exports.getNoteById = async (req, res) => {
   try {
 
@@ -36,6 +36,7 @@ exports.getNoteById = async (req, res) => {
   }
 }
 
+// Create Note API
 exports.createNote = async (req, res) => {
   try {
 
@@ -55,6 +56,7 @@ exports.createNote = async (req, res) => {
   }
 }
 
+// Update Note API
 exports.updateNote = async (req, res) => {
   try {
 
@@ -80,6 +82,7 @@ exports.updateNote = async (req, res) => {
   }
 }
 
+// Delete Note API
 exports.deleteNote = async (req, res) => {
   try {
 
